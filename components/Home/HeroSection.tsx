@@ -19,8 +19,8 @@ const HeroSection = () => {
 				<p className="text-lg text-[#7b8ec8] ">
 					Making your home beautiful and functional is now hassle-free!
 					UrbanDoor connects you with skilled professionals for all your home
-					needs. From fixing leaks to cleaning, we've got you covered. Say hello
-					to easy home solutions with UrbanDoor.
+					needs. From fixing leaks to cleaning, we have got you covered. Say
+					hello to easy home solutions with UrbanDoor.
 				</p>
 			</div>
 			<div className=" mr-20 ">
