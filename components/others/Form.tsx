@@ -80,116 +80,114 @@ const ContactForm = () => {
 		console.log(values);
 	}
 	return (
-		<>
-			<Form {...form}>
-				<form
-					onSubmit={form.handleSubmit(onSubmit)}
-					className="space-y-2  mx-auto bg-[#1c2432] p-4 rounded-lg shadow-lg w-[50%]"
-				>
-					<FormField
-						control={form.control}
-						name="name"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel className="bg-[#1c2432]">
-									Name<span className="text-black">*</span>
-								</FormLabel>
-								<FormControl className="bg-[#1c2432]">
-									<Input {...field} />
-								</FormControl>
-								<FormDescription className="text-[#749487]">
-									Enter Your Name
-								</FormDescription>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
-					<FormField
-						control={form.control}
-						name="number"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel className="">
-									Number
-									<span className="text-black">*</span>
-								</FormLabel>
-								<FormControl className="bg-[#1c2432]">
-									<Input {...field} />
-								</FormControl>
-								<FormDescription className="text-[#749487]">
-									Enter Your Number
-								</FormDescription>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
-					<FormField
-						control={form.control}
-						name="emailId"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel className="paragraph-semibold text-dark400_light800">
-									Email Id
-									<span className="text-black">*</span>
-								</FormLabel>
-								<FormControl className="bg-[#1c2432]">
-									<Input {...field} />
-								</FormControl>
-								<FormDescription className="text-[#749487]">
-									Enter Your Email Id
-								</FormDescription>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
-					<FormField
-						control={form.control}
-						name="address"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel className="paragraph-semibold text-dark400_light800">
-									Address
-									<span className="text-black">*</span>
-								</FormLabel>
-								<FormControl className="bg-[#1c2432]">
-									<Input {...field} />
-								</FormControl>
-								<FormDescription className="text-[#749487]">
-									Enter Your Address
-								</FormDescription>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
-					<FormField
-						control={form.control}
-						name="message"
-						render={({ field }) => (
-							<FormItem>
-								<FormLabel className="paragraph-semibold text-dark400_light800">
-									Message
-									<span className="text-black">*</span>
-								</FormLabel>
-								<FormControl className="bg-[#1c2432]">
-									<Input {...field} />
-								</FormControl>
-								<FormDescription className="text-[#749487]">
-									Enter Your Message
-								</FormDescription>
-								<FormMessage />
-							</FormItem>
-						)}
-					/>
+		<Form {...form}>
+			<form
+				onSubmit={form.handleSubmit(onSubmit)}
+				className="space-y-2  mx-auto bg-[#1c2432] p-4 rounded-lg shadow-lg w-[50%]"
+			>
+				<FormField
+					control={form.control}
+					name="name"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel className="bg-[#1c2432]">
+								Name<span className="text-black">*</span>
+							</FormLabel>
+							<FormControl className="bg-[#1c2432]">
+								<Input {...field} />
+							</FormControl>
+							<FormDescription className="text-[#749487]">
+								Enter Your Name
+							</FormDescription>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
+				<FormField
+					control={form.control}
+					name="number"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel className="">
+								Number
+								<span className="text-black">*</span>
+							</FormLabel>
+							<FormControl className="bg-[#1c2432]">
+								<Input {...field} />
+							</FormControl>
+							<FormDescription className="text-[#749487]">
+								Enter Your Number
+							</FormDescription>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
+				<FormField
+					control={form.control}
+					name="emailId"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel className="paragraph-semibold text-dark400_light800">
+								Email Id
+								<span className="text-black">*</span>
+							</FormLabel>
+							<FormControl className="bg-[#1c2432]">
+								<Input {...field} />
+							</FormControl>
+							<FormDescription className="text-[#749487]">
+								Enter Your Email Id
+							</FormDescription>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
+				<FormField
+					control={form.control}
+					name="address"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel className="paragraph-semibold text-dark400_light800">
+								Address
+								<span className="text-black">*</span>
+							</FormLabel>
+							<FormControl className="bg-[#1c2432]">
+								<Input {...field} />
+							</FormControl>
+							<FormDescription className="text-[#749487]">
+								Enter Your Address
+							</FormDescription>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
+				<FormField
+					control={form.control}
+					name="message"
+					render={({ field }) => (
+						<FormItem>
+							<FormLabel className="paragraph-semibold text-dark400_light800">
+								Message
+								<span className="text-black">*</span>
+							</FormLabel>
+							<FormControl className="bg-[#1c2432]">
+								<Input {...field} />
+							</FormControl>
+							<FormDescription className="text-[#749487]">
+								Enter Your Message
+							</FormDescription>
+							<FormMessage />
+						</FormItem>
+					)}
+				/>
 
-					<Button
-						type="submit"
-						className="my-10 ml-[40%]  bg-blue-400 text-white font-bold"
-					>
-						Submit
-					</Button>
-				</form>
-			</Form>
-		</>
+				<Button
+					type="submit"
+					className="my-10 ml-[40%]  bg-blue-400 text-white font-bold"
+				>
+					Submit
+				</Button>
+			</form>
+		</Form>
 	);
 };
 

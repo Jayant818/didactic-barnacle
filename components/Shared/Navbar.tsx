@@ -14,58 +14,44 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import emailjs from "@emailjs/browser";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Link from "next/link";
+import { createUser } from "@/lib/actions/user.action";
+import { useRouter } from "next/navigation";
 
-// Initializing emailjs
-emailjs.init({
-	publicKey: process.env.EMAILJS_API_KEY,
-});
-
-// Navbar component
 const Navbar = () => {
 	const [name, setName] = useState("");
 	const [number, setNumber] = useState("");
 	const [email, setEmail] = useState("");
 	const [address, setAddress] = useState("");
 	const [problem, setProblem] = useState("");
+	const router = useRouter();
 
-	const handleClick = () => {
-		const templateParams = {
-			name: name,
-			number: number,
-			email: email,
-			Address: address,
-			Description: problem,
-		};
+	const handleClick = async () => {
+		try {
+			await createUser({
+				name: name,
+				number: number,
+				email: email,
+				Address: address,
+				Description: problem,
+			});
 
-		emailjs
-			.send("service_cv4dpt9", "template_mbsm63b", templateParams, {
-				publicKey: "Bnfzfpmsj0UTGmJ-8",
-			})
-			.then(
-				(response) => {
-					console.log("SUCCESS!", response.status, response.text);
-				},
-				(err) => {
-					console.log("FAILED...", err);
-				}
-			);
+			router.push("/");
+		} catch (error) {}
 	};
 
 	return (
 		<nav className="flex justify-between p-4 items-center bg-[#0f1117] ">
 			<div className="flex gap-6">
-				<h3 className="font-extrabold text-2xl text-[#ffffff]">
+				<h3 className="font-extrabold text-lg  md:text-2xl text-[#ffffff]">
 					Urban
-					<span className="text-[#ff7000]">Doors</span>
+					<span className="text-[#ff7000]">Door</span>
 				</h3>
 				<ul className="flex gap-3 mt-1 text-[#ffffff]">
 					<li>
 						<Link
 							href="/"
-							className="hover:underline hover:text-[#ff7000] text-semibold"
+							className="hover:underline hover:text-[#ff7000] text-semibold text-sm md:text-base"
 						>
 							Home
 						</Link>
@@ -73,7 +59,7 @@ const Navbar = () => {
 					<li>
 						<Link
 							href="/services"
-							className="hover:underline hover:text-[#ff7000] text-semibold"
+							className="hover:underline hover:text-[#ff7000] text-semibold text-sm md:text-base"
 						>
 							Services
 						</Link>
@@ -81,25 +67,30 @@ const Navbar = () => {
 					<li>
 						<Link
 							href="/about"
-							className="hover:underline hover:text-[#ff7000] text-semibold"
+							className="hover:underline hover:text-[#ff7000] text-semibold text-sm md:text-base"
 						>
 							About
 						</Link>
 					</li>
-					<li>
+					{/* <li>
 						<Link
-							href="/contact"
-							className="hover:underline hover:text-[#ff7000] text-semibold"
+							href="/"
+							className="hover:underline hover:text-[#ff7000] text-semibold text-sm md:text-base"
 						>
 							Contact Us
 						</Link>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 			<div>
 				<Dialog>
 					<DialogTrigger asChild>
-						<Button variant="outline">Book Now</Button>
+						<Button
+							variant="outline"
+							className="px-2 md:px-4 text-xs md:text-base"
+						>
+							Book Now
+						</Button>
 					</DialogTrigger>
 					<DialogContent className="sm:max-w-[425px]">
 						<DialogHeader>
