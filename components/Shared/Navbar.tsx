@@ -41,12 +41,14 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="flex justify-between p-4 items-center bg-[#0f1117] ">
+		<nav className="flex  justify-between p-4 items-center bg-[#0f1117] ">
 			<div className="flex gap-3 md:gap-6">
-				<h3 className="font-extrabold text-base  md:text-2xl text-[#ffffff]">
-					Urban
-					<span className="text-[#ff7000]">Door</span>
-				</h3>
+				<Link href="/">
+					<h3 className="font-extrabold text-base  md:text-2xl text-[#ffffff]">
+						Urban
+						<span className="text-[#ff7000]">Door</span>
+					</h3>
+				</Link>
 				<ul className="flex gap-2 mt-1 text-[#ffffff]">
 					<li>
 						<Link

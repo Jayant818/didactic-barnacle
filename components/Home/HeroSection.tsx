@@ -5,7 +5,7 @@ import Home from "./Home.json";
 const HeroSection = () => {
 	return (
 		<div className="flex flex-col lg:flex-row items-center justify-between  py-10  lg:px-0 bg-[#000000] h-[35rem]">
-			<div className="lg:w-[40%] ml-20 ">
+			<div className="lg:w-[40%] ml-10 md:ml-20 p-4">
 				<h3 className="text-2xl lg:text-4xl font-bold  mb-4 text-[#fff]">
 					Welcome to UrbanDoor - Your Home Service Experts
 				</h3>
@@ -16,7 +16,7 @@ const HeroSection = () => {
 					hello to easy home solutions with UrbanDoor.
 				</p>
 			</div>
-			<div className=" mr-20 ">
+			<div className="mr-10  md:mr-20 ">
 				<Lottie
 					animationData={Home}
 					loop={true}
