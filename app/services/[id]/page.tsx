@@ -86,15 +86,15 @@ const NewService = (params: any) => {
 					and conditions stated on this page. UrbanDoor connects you with
 					skilled professionals for all your home needs. From fixing leaks to
 					cleaning, we have got you covered. This service is provided by
-					UrbanDoor on an 'as is' basis. We make no representations or
-					warranties of any kind, express or implied, about the operation of
+					UrbanDoor on an `&apos;as is`&apos; basis. We make no representations
+					or warranties of any kind, express or implied, about the operation of
 					this service or the information, content, materials or products
 					included on this website. By using our services, you hereby consent to
 					our terms and conditions and agree to its terms. These terms and
 					conditions will be governed by and interpreted in accordance with the
-					laws of the state of [Your State], and you submit to the non-exclusive
-					jurisdiction of the state and federal courts located in [Your State]
-					for the resolution of any disputes.
+					laws of the state of Haryana, and you submit to the non-exclusive
+					jurisdiction of the state and federal courts located in Haryana for
+					the resolution of any disputes.
 				</p>
 			</div>
 		</div>
