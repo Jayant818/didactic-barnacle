@@ -5,7 +5,7 @@ import { connectToDB } from "../mongoose";
 
 export async function getAllUser() {
 	try {
-		connectToDB();
+		await connectToDB();
 
 		const users = await User.find({});
 
