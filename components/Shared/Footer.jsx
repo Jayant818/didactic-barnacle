@@ -26,7 +26,7 @@ function Footer() {
 						alt="Facebook Logo"
 						width={19}
 						height={19}
-						className="object-contain"
+						className="object-contain text-white"
 					/>
 				</Link>
 			</div>
