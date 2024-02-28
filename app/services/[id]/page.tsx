@@ -74,10 +74,8 @@ const NewService = (params: any) => {
 					</div>
 				</div>
 			)}
-			<div className="p-10 md:p-20 bg-white text-black">
-				<h3 className="text-xl md:text-2xl pl-10 md:pl-20 font-bold">
-					Terms & Conditions
-				</h3>
+			<div className="p-10 md:p-20  ">
+				<h3 className="text-xl md:text-2xl  font-bold">Terms & Conditions</h3>
 				<p className="mt-5 text-base md:text-lg text-justify">
 					Welcome to UrbanDoor. These terms and conditions outline the rules and
 					regulations for the use of UrbanDoor&apos;s services. By accessing

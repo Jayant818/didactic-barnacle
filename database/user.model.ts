@@ -16,4 +16,4 @@ const UserSchema = new Schema({
 	Description: String,
 });
 
-export const User = models.User || model("User", UserSchema);
+export const User = models.User || model<IUser>("User", UserSchema);

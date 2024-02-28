@@ -7,7 +7,7 @@ export async function getAllUser() {
 	try {
 		await connectToDB();
 
-		const users = await User.find({});
+		const users = await User.find({}).sort({ createdAt: -1 });
 
 		return users;
 	} catch (error) {

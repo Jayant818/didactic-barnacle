@@ -26,7 +26,7 @@ function Footer() {
 						alt="Facebook Logo"
 						width={19}
 						height={19}
-						className="object-contain text-white"
+						className="object-contain filter brightness-0"
 					/>
 				</Link>
 			</div>
