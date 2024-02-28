@@ -17,7 +17,7 @@ const page = () => {
 				ratione nisi autem quae. Earum eaque saepe optio debitis quaerat.
 			</p>
 			<div className="flex flex-col md:flex-row  justify-center space-y-10 items-center md:space-x-20">
-				<div className="items-center max-w-40 md:max-w-sm flex flex-col text-sm border-blue-200 p-6 border-2 bg-[#0f1117] rounded-md  space-y-4">
+				<div className="items-center max-w-60 md:max-w-sm flex flex-col text-sm border-blue-200 p-6 border-2 bg-[#0f1117] rounded-md  space-y-4">
 					<h3 className="text-lg md:text-xl text-[#ff7000] font-bold">
 						Our Mission
 					</h3>
@@ -27,7 +27,7 @@ const page = () => {
 						affordable prices.
 					</p>
 				</div>
-				<div className="items-center max-w-sm flex flex-col text-sm border-blue-200 p-6 border-2 bg-[#0f1117] rounded  space-y-4 ">
+				<div className="items-center  max-w-60 md:max-w-sm flex flex-col text-sm border-blue-200 p-6 border-2 bg-[#0f1117] rounded  space-y-4 ">
 					<h3 className="text-lg md:text-xl text-[#ff7000] font-bold">
 						Our Vision
 					</h3>
@@ -36,7 +36,7 @@ const page = () => {
 						world. We aim to provide our services to as many people as possible.
 					</p>
 				</div>
-				<div className="items-center max-w-sm flex flex-col text-sm border-blue-200 p-6 border-2 bg-[#0f1117] rounded  space-y-4 ">
+				<div className="items-center  max-w-60 md:max-w-sm flex flex-col text-sm border-blue-200 p-6 border-2 bg-[#0f1117] rounded  space-y-4 ">
 					<h3 className="text-lg md:text-xl text-[#ff7000] font-bold">
 						Our Values
 					</h3>

@@ -74,6 +74,29 @@ const NewService = (params: any) => {
 					</div>
 				</div>
 			)}
+			<div className="p-10 md:p-20 bg-white text-black">
+				<h3 className="text-xl md:text-2xl pl-10 md:pl-20 font-bold">
+					Terms & Conditions
+				</h3>
+				<p className="mt-5 text-base md:text-lg text-justify">
+					Welcome to UrbanDoor. These terms and conditions outline the rules and
+					regulations for the use of UrbanDoor&apos;s services. By accessing
+					this website, we assume you accept these terms and conditions. Do not
+					continue to use UrbanDoor if you do not agree with all of the terms
+					and conditions stated on this page. UrbanDoor connects you with
+					skilled professionals for all your home needs. From fixing leaks to
+					cleaning, we have got you covered. This service is provided by
+					UrbanDoor on an 'as is' basis. We make no representations or
+					warranties of any kind, express or implied, about the operation of
+					this service or the information, content, materials or products
+					included on this website. By using our services, you hereby consent to
+					our terms and conditions and agree to its terms. These terms and
+					conditions will be governed by and interpreted in accordance with the
+					laws of the state of [Your State], and you submit to the non-exclusive
+					jurisdiction of the state and federal courts located in [Your State]
+					for the resolution of any disputes.
+				</p>
+			</div>
 		</div>
 	);
 };
