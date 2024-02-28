@@ -2,11 +2,14 @@ import { getAllUser } from "@/lib/actions/user.action";
 import React from "react";
 
 export interface ContactType {
+	_id: string; // Assuming ObjectId is converted to string when fetched
 	name: string;
 	number: string;
 	email: string;
 	Address: string;
 	Description: string;
+	__v: number;
+	// _id:
 }
 
 const ContactCard = ({ contact }: { contact: ContactType }) => {
