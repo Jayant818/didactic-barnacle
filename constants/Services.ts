@@ -3,6 +3,8 @@ export const AllServices = [
 		id: 1,
 		type: "Appliance",
 		split: true,
+		description:
+			"Comprehensive air conditioner service for split and window units, ensuring peak performance and comfort year-round.",
 		name: "Air Conditioner",
 		splitArray: [
 			{
@@ -63,6 +65,9 @@ export const AllServices = [
 		id: 2,
 		type: "Appliance",
 		split: true,
+		description:
+			"Expert repair, installation, and maintenance services for residential and commercial RO water purifiers, ensuring pure and safe drinking water.",
+
 		name: "RO Water Purifier",
 		splitArray: [
 			{
@@ -123,6 +128,9 @@ export const AllServices = [
 		id: 3,
 		type: "Appliance",
 		split: true,
+		description:
+			"Comprehensive service encompassing repair, installation, and uninstallation for semi-automatic, top-load, and front-load washing machines, ensuring seamless laundry solutions for every household.",
+
 		name: "Washing Machine",
 		splitArray: [
 			{
@@ -173,6 +181,9 @@ export const AllServices = [
 		id: 4,
 		type: "Appliance",
 		split: true,
+		description:
+			"Complete LED service solutions including repair, installation, and uninstallation for screens up to 32 inches and above, ensuring optimal viewing experiences for all sizes.",
+
 		name: "LED",
 		splitArray: [
 			{
@@ -233,6 +244,9 @@ export const AllServices = [
 		id: 5,
 		type: "Appliance",
 		split: false,
+		description:
+			"Comprehensive refrigerator service offering expert repair and maintenance solutions for optimal cooling and preservation of food freshness.",
+
 		name: "Refrigerator",
 		splitArray: [
 			{
@@ -257,6 +271,9 @@ export const AllServices = [
 		id: 6,
 		type: "Appliance",
 		split: false,
+		description:
+			"Efficient water cooler service providing repair, installation, and uninstallation solutions for uninterrupted hydration and refreshment.",
+
 		name: "Water Cooler",
 		splitArray: [
 			{
@@ -291,6 +308,9 @@ export const AllServices = [
 		id: 7,
 		type: "Appliance",
 		split: false,
+		description:
+			"Complete microwave service offering expert repair, installation, and uninstallation for convenient cooking and heating solutions.",
+
 		name: "Microwave",
 		splitArray: [
 			{
@@ -325,6 +345,8 @@ export const AllServices = [
 		id: 8,
 		type: "Appliance",
 		split: false,
+		description:
+			"Comprehensive deep freezer service providing expert repair, installation, and uninstallation for reliable preservation of perishables.",
 		name: "Deep Freezer",
 		splitArray: [
 			{
@@ -360,6 +382,9 @@ export const AllServices = [
 		type: "Others",
 		split: false,
 		name: "Plumbing",
+		description:
+			"Complete plumbing service: repair, installation, and maintenance for all fixtures – taps, sinks, toilets, and more, ensuring optimal functionality.",
+
 		splitArray: [
 			{
 				name: "All Types of Plumbing Services - Repair / Installation",
@@ -433,6 +458,9 @@ export const AllServices = [
 		id: 10,
 		type: "Others",
 		split: false,
+		description:
+			"Expert carpentry service: doors, windows, furniture, and more - quality craftsmanship guaranteed.",
+
 		name: "Carpentry",
 		splitArray: [
 			{
@@ -519,6 +547,9 @@ export const AllServices = [
 		id: 11,
 		type: "Others",
 		split: false,
+		description:
+			"Comprehensive electrical service covering switches, sockets, lights, MCBs, earthing, tripping, new wiring, and more, ensuring safety and efficiency in every installation and repair.",
+
 		name: "Electrical",
 		splitArray: [
 			{
@@ -580,6 +611,9 @@ export const AllServices = [
 		id: 12,
 		type: "Others",
 		split: false,
+		description:
+			"Complete pest control service targeting general pests, cockroaches, bed bugs, dengue, ants, lizards, termites, rodents, and more, ensuring comprehensive eradication and prevention.",
+
 		name: "Pest Control",
 		splitArray: [
 			{
@@ -642,6 +676,9 @@ export const AllServices = [
 		id: 13,
 		type: "Others",
 		split: false,
+		description:
+			"Full-spectrum painting service including house painting, waterproofing, textured painting, enamel painting, wood polishing, stenciling, and repairs for comprehensive aesthetic enhancement",
+
 		name: "Painting",
 		splitArray: [
 			{
@@ -698,6 +735,9 @@ export const AllServices = [
 		id: 14,
 		type: "Others",
 		split: false,
+		description:
+			"Comprehensive interior design service transforming kitchens, almirahs, LED panels, wood furniture, and more, for personalized and functional spaces.",
+
 		name: "Interior Designing",
 		splitArray: [
 			{

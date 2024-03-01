@@ -24,8 +24,8 @@ function Footer() {
 					<Image
 						src="./images/facebook.svg"
 						alt="Facebook Logo"
-						width={19}
-						height={19}
+						width={23}
+						height={23}
 						className="object-contain filter brightness-0"
 					/>
 				</Link>

@@ -46,10 +46,8 @@ const Services = () => {
 							{service.name}
 						</h3>
 						<p className="text-center text-sm md:text-base">
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-							neque, necessitatibus, ipsa sint!
+							{service.description}
 						</p>
-						{/* <p className="text-center">{service.description}</p> */}
 						<Button className="bg-white text-black font-bold hover:bg-white ">
 							<Link href={`/services/${service.id}`}>Book Now</Link>
 						</Button>

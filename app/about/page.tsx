@@ -6,7 +6,7 @@ const page = () => {
 			</h1>
 			<p className="px-10  md:px-28 my-6  md:text-base">
 				<h3 className="font-extrabold  text-xl md:text-2xl text-[#ffffff] inline-block">
-					Urban<span className="text-[#ff7000]">Doors</span>
+					Urban<span className="text-[#ff7000]">Door</span>
 				</h3>{" "}
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa neque
 				natus omnis architecto quam quidem molestias voluptas cum, ea totam

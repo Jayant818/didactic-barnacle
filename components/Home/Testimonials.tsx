@@ -14,7 +14,7 @@ const data = [
 		place: "Dharuhera, Haryana",
 		imgSrc: "/images/Testimonials/lucky.png",
 		description:
-			"They did a great job! They were really nice and got the job done quickly. I would definitely recommend them to anyone.",
+			"They did a great job! They were really nice and got the job done quickly.",
 	},
 	{
 		name: "Sumiti Sharma",
@@ -44,7 +44,7 @@ const Testimonials = () => {
 			<h2 className="text-left font-semibold text-xl  md:text-3xl pl-10  md:pl-20 ">
 				Testimonials
 			</h2>
-			<div className="flex md:flex-col gap-4  md:gap-6 flex-wrap px-10 mt-6  md:px-14 md:mt-10">
+			<div className="flex gap-4  md:gap-6 flex-wrap px-10 mt-6  md:px-14 md:mt-10">
 				{data.map((person) => (
 					<Testimonial
 						key={person.name}
