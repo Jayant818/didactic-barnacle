@@ -30,7 +30,7 @@ const page = async () => {
 	const data = await getAllUser();
 	console.log(data);
 	return (
-		<div className="flex flex-col items-center justify-center  bg-gray-800">
+		<div className="flex flex-col items-center justify-center  bg-gray-800 min-h-[80vh]">
 			<h1 className="text-3xl font-bold text-white mb-8 mt-4">Contact List</h1>
 			{data.map((contact: ContactType) => (
 				<ContactCard key={contact._id} contact={contact} />
