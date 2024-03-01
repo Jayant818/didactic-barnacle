@@ -18,7 +18,7 @@ export function Testimonial(props: personProps) {
 	return (
 		// <div className="flex items-center justify-center min-h-screen ">
 		<div className="  mx-auto  p-6 rounded-lg shadow-offset-black offset-x-10 offset-y-10">
-			<Card className="p-6 font-poppins min-h-64 w-96 bg-[#151821] text-white">
+			<Card className="p-6 font-poppins min-h-64 max-w-72  md:w-96 bg-[#151821] text-white">
 				<CardContent className="text-xl relative mb-2 max-w-80 md:w-80">
 					<svg
 						className=" absolute top-0 left-0 text-20xl text-cyan-300"
