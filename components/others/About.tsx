@@ -9,7 +9,7 @@ const About = () => {
 					WHo are we
 				</h3>
 				<p className="px-10 md:px-28 my-6 md:text-base">
-					At URBAN DOOR, we&apos;ve redefined property care and enhancement as a
+					At URBAN DOOR, we've redefined property care and enhancement as a
 					comprehensive platform that caters to every facet of your residential
 					and commercial needs. As your trusted partner, we pride ourselves on
 					being the bridge to seamless property maintenance, repair, and
@@ -26,7 +26,7 @@ const About = () => {
 						{
 							title: "Home Appliances Repair and Service:",
 							description:
-								"URBAN DOOR&apos;s skilled technicians specialize in diagnosing and repairing various home appliances, ensuring your daily routines remain uninterrupted. From refrigerators to washing machines, we're here to keep your appliances running smoothly.",
+								"URBAN DOOR's skilled technicians specialize in diagnosing and repairing various home appliances, ensuring your daily routines remain uninterrupted. From refrigerators to washing machines, we're here to keep your appliances running smoothly.",
 						},
 						{
 							title: "Plumbing Precision:",
@@ -36,7 +36,7 @@ const About = () => {
 						{
 							title: "Craftsmanship in Carpentry:",
 							description:
-								"URBAN DOOR&apos;s carpentry services are a testament to our commitment to excellence. Whether it's a furniture repair, custom project, or complete renovations, our skilled carpenters bring precision and artistry to every task.",
+								"URBAN DOOR's carpentry services are a testament to our commitment to excellence. Whether it's a furniture repair, custom project, or complete renovations, our skilled carpenters bring precision and artistry to every task.",
 						},
 						{
 							title: "Electrical Excellence:",
@@ -51,7 +51,7 @@ const About = () => {
 						{
 							title: "Pest Control Mastery:",
 							description:
-								"URBAN DOOR&apos;s pest control services are conducted with precision and care. We address pests such as ants, cockroaches, termites, rodents, bed bugs, and mosquitoes, providing tailored solutions for both homes and businesses.",
+								"URBAN DOOR's pest control services are conducted with precision and care. We address pests such as ants, cockroaches, termites, rodents, bed bugs, and mosquitoes, providing tailored solutions for both homes and businesses.",
 						},
 						{
 							title: "Interior Designing Dreams:",
