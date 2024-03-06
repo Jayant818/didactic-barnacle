@@ -36,7 +36,6 @@ const formSchema = z.object({
 
 const ContactForm = () => {
 	const router = useRouter();
-	// 1. Define your form.
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
@@ -108,25 +107,6 @@ const ContactForm = () => {
 						</FormItem>
 					)}
 				/>
-				{/* <FormField
-					control={form.control}
-					name="emailId"
-					render={({ field }) => (
-						<FormItem>
-							<FormLabel className="paragraph-semibold text-dark400_light800">
-								Email Id
-								<span className="text-black">*</span>
-							</FormLabel>
-							<FormControl className="bg-[#1c2432]">
-								<Input {...field} />
-							</FormControl>
-							<FormDescription className="text-[#749487]">
-								Enter Your Email Id
-							</FormDescription>
-							<FormMessage />
-						</FormItem>
-					)}
-				/> */}
 				<FormField
 					control={form.control}
 					name="address"

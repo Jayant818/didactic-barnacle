@@ -13,7 +13,6 @@ export default function Home() {
 			<div className="-mt-32">
 				<About />
 			</div>
-			{/* <Testimonials /> */}
 		</>
 	);
 }

@@ -21,7 +21,6 @@ export default function RootLayout({
 			<body className={`${inter.className} bg-[#000]`}>
 				<Navbar />
 				<main className="text-white w-full min-h-[73vh]">{children}</main>
-				{/* <Toaster /> */}
 				<Footer />
 			</body>
 		</html>

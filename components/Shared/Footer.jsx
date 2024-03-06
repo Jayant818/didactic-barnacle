@@ -77,7 +77,6 @@ function Footer() {
 						Contact Details
 					</h3>
 					<div className="flex flex-col gap-4 mt-6">
-						{/* ac ref water deep fr */}
 						{[
 							"Address:- TC-610, Capital",
 							"HighStreet, Phoal Bagh",
@@ -118,7 +117,6 @@ function Footer() {
 									height={23}
 									className="object-contain filter brightness-0"
 								/>
-								{/* <p className=" text-white text-bold">Facebook</p> */}
 							</div>
 						</Link>
 					</div>
