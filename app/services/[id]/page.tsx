@@ -74,9 +74,9 @@ const NewService = (params: any) => {
 					</div>
 				</div>
 			)}
-			<div className="p-10 md:p-20  ">
-				<h3 className="text-xl md:text-2xl  font-bold">Terms & Conditions</h3>
-				<ul className="mt-5 text-base md:text-lg text-justify">
+			<div className="p-10 md:p-20">
+				<h3 className="text-xl md:text-2xl font-bold">Terms & Conditions</h3>
+				<ul className="mt-5 text-base md:text-lg text-justify list-disc">
 					{data[0].conditions.map((item, ind) => {
 						return <li key={ind}>{item}</li>;
 					})}

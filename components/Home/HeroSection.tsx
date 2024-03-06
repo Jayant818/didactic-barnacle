@@ -9,7 +9,7 @@ const HeroSection = () => {
 				<h3 className="text-2xl lg:text-4xl font-bold  mb-4 text-[rgb(255,255,255)]">
 					Welcome to Urban Door - Services are many, you choose any
 				</h3>
-				<p className="text-base  md:text-lg text-[#7b8ec8] ">
+				<p className="text-base  md:text-lg text-[#ff7000] ">
 					Making your home beautiful and functional is now hassle-free! Urban
 					Door connects you with skilled professionals for all your home needs.
 					From fixing leaks to painting, we have got you covered. Say hello to

@@ -45,7 +45,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full fixed flex justify-between px-4 py-2 md:p-4 items-center bg-[#0f1117] z-50">
+		<nav className="w-full fixed flex justify-between px-4 py-1 md:p-4 items-center bg-[#0f1117] z-50">
 			<div className={`flex  items-center md:hidden`}>
 				<button className="text-white focus:outline-none" onClick={toggleMenu}>
 					<svg
@@ -119,7 +119,7 @@ const Navbar = () => {
 					className="px-1   md:px-4 text-[0.7rem] md:text-base "
 				>
 					<a href="tel:9116671966" className="flex flex-wrap">
-						Contact - 9116671966
+						Contact
 					</a>
 				</Button>
 				{/* <Dialog>
