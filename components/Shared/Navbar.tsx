@@ -45,7 +45,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className="w-full fixed flex justify-between p-4 items-center bg-[#0f1117] z-50">
+		<nav className="w-full fixed flex justify-between px-4 py-2 md:p-4 items-center bg-[#0f1117] z-50">
 			<div className={`flex  items-center md:hidden`}>
 				<button className="text-white focus:outline-none" onClick={toggleMenu}>
 					<svg
@@ -116,11 +116,13 @@ const Navbar = () => {
 				</ul>
 				<Button
 					variant="outline"
-					className="px-2 md:px-4 text-xs md:text-base "
+					className="px-1   md:px-4 text-[0.7rem] md:text-base "
 				>
-					<a href="tel:9711177191">Contact - 9711177191</a>
+					<a href="tel:9116671966" className="flex flex-wrap">
+						Contact - 9116671966
+					</a>
 				</Button>
-				<Dialog>
+				{/* <Dialog>
 					<DialogTrigger asChild>
 						<Button
 							variant="outline"
@@ -129,7 +131,90 @@ const Navbar = () => {
 							Book Now
 						</Button>
 					</DialogTrigger>
-					{/* Dialog content */}
+					
+				</Dialog> */}
+				<Dialog>
+					<DialogTrigger asChild>
+						<Button
+							variant="outline"
+							className="px-1  md:px-4 text-[0.7rem] md:text-base"
+						>
+							Book Now
+						</Button>
+					</DialogTrigger>
+					<DialogContent className="sm:max-w-[425px]">
+						<DialogHeader>
+							<DialogTitle>Book Now</DialogTitle>
+							<DialogDescription>
+								Get Expert Service at your Doorstep
+							</DialogDescription>
+						</DialogHeader>
+						<div className="grid gap-4 py-4">
+							<div className="grid grid-cols-4 items-center gap-4">
+								<Label htmlFor="name" className="">
+									Name
+								</Label>
+								<Input
+									id="name"
+									className="col-span-3"
+									required
+									onChange={(e) => setName(e.target.value)}
+								/>
+							</div>
+							<div className="grid grid-cols-4 items-center gap-4">
+								<Label htmlFor="number" className="">
+									Number
+								</Label>
+								<Input
+									id="number"
+									className="col-span-3"
+									required
+									onChange={(e) => setNumber(e.target.value)}
+								/>
+							</div>
+							{/* <div className="grid grid-cols-4 items-center gap-4">
+								<Label htmlFor="email" className="">
+									Email Id
+								</Label>
+								<Input
+									id="email"
+									className="col-span-3"
+									required
+									onChange={(e) => setEmail(e.target.value)}
+								/>
+							</div> */}
+							<div className="grid grid-cols-4 items-center gap-4">
+								<Label htmlFor="Address" className="">
+									Address
+								</Label>
+								<Input
+									id="Address"
+									className="col-span-3"
+									required
+									onChange={(e) => setAddress(e.target.value)}
+								/>
+							</div>
+							<div className="flex  items-center gap-4 ">
+								<Label htmlFor="problem" className="w-28">
+									Your problem
+								</Label>
+								<Textarea
+									placeholder="Type your message here."
+									id="problem"
+									className="col-span-3"
+									required
+									onChange={(e) => setProblem(e.target.value)}
+								/>
+							</div>
+						</div>
+						<DialogFooter>
+							<DialogClose asChild>
+								<Button type="submit" onClick={handleClick}>
+									Send
+								</Button>
+							</DialogClose>
+						</DialogFooter>
+					</DialogContent>
 				</Dialog>
 			</div>
 
@@ -222,89 +307,89 @@ const Navbar = () => {
 		// 			<a href="tel:9116671966">Contact - 9116671966</a>
 		// 		</Button>
 
-		// 		<Dialog>
-		// 			<DialogTrigger asChild>
-		// 				<Button
-		// 					variant="outline"
-		// 					className="px-2 md:px-4 text-xs md:text-base"
-		// 				>
-		// 					Book Now
+		// <Dialog>
+		// 	<DialogTrigger asChild>
+		// 		<Button
+		// 			variant="outline"
+		// 			className="px-2 md:px-4 text-xs md:text-base"
+		// 		>
+		// 			Book Now
+		// 		</Button>
+		// 	</DialogTrigger>
+		// 	<DialogContent className="sm:max-w-[425px]">
+		// 		<DialogHeader>
+		// 			<DialogTitle>Book Now</DialogTitle>
+		// 			<DialogDescription>
+		// 				Get Expert Service at your Doorstep
+		// 			</DialogDescription>
+		// 		</DialogHeader>
+		// 		<div className="grid gap-4 py-4">
+		// 			<div className="grid grid-cols-4 items-center gap-4">
+		// 				<Label htmlFor="name" className="">
+		// 					Name
+		// 				</Label>
+		// 				<Input
+		// 					id="name"
+		// 					className="col-span-3"
+		// 					required
+		// 					onChange={(e) => setName(e.target.value)}
+		// 				/>
+		// 			</div>
+		// 			<div className="grid grid-cols-4 items-center gap-4">
+		// 				<Label htmlFor="number" className="">
+		// 					Number
+		// 				</Label>
+		// 				<Input
+		// 					id="number"
+		// 					className="col-span-3"
+		// 					required
+		// 					onChange={(e) => setNumber(e.target.value)}
+		// 				/>
+		// 			</div>
+		// 			{/* <div className="grid grid-cols-4 items-center gap-4">
+		// 				<Label htmlFor="email" className="">
+		// 					Email Id
+		// 				</Label>
+		// 				<Input
+		// 					id="email"
+		// 					className="col-span-3"
+		// 					required
+		// 					onChange={(e) => setEmail(e.target.value)}
+		// 				/>
+		// 			</div> */}
+		// 			<div className="grid grid-cols-4 items-center gap-4">
+		// 				<Label htmlFor="Address" className="">
+		// 					Address
+		// 				</Label>
+		// 				<Input
+		// 					id="Address"
+		// 					className="col-span-3"
+		// 					required
+		// 					onChange={(e) => setAddress(e.target.value)}
+		// 				/>
+		// 			</div>
+		// 			<div className="flex  items-center gap-4 ">
+		// 				<Label htmlFor="problem" className="w-28">
+		// 					Your problem
+		// 				</Label>
+		// 				<Textarea
+		// 					placeholder="Type your message here."
+		// 					id="problem"
+		// 					className="col-span-3"
+		// 					required
+		// 					onChange={(e) => setProblem(e.target.value)}
+		// 				/>
+		// 			</div>
+		// 		</div>
+		// 		<DialogFooter>
+		// 			<DialogClose asChild>
+		// 				<Button type="submit" onClick={handleClick}>
+		// 					Send
 		// 				</Button>
-		// 			</DialogTrigger>
-		// 			<DialogContent className="sm:max-w-[425px]">
-		// 				<DialogHeader>
-		// 					<DialogTitle>Book Now</DialogTitle>
-		// 					<DialogDescription>
-		// 						Get Expert Service at your Doorstep
-		// 					</DialogDescription>
-		// 				</DialogHeader>
-		// 				<div className="grid gap-4 py-4">
-		// 					<div className="grid grid-cols-4 items-center gap-4">
-		// 						<Label htmlFor="name" className="">
-		// 							Name
-		// 						</Label>
-		// 						<Input
-		// 							id="name"
-		// 							className="col-span-3"
-		// 							required
-		// 							onChange={(e) => setName(e.target.value)}
-		// 						/>
-		// 					</div>
-		// 					<div className="grid grid-cols-4 items-center gap-4">
-		// 						<Label htmlFor="number" className="">
-		// 							Number
-		// 						</Label>
-		// 						<Input
-		// 							id="number"
-		// 							className="col-span-3"
-		// 							required
-		// 							onChange={(e) => setNumber(e.target.value)}
-		// 						/>
-		// 					</div>
-		// 					{/* <div className="grid grid-cols-4 items-center gap-4">
-		// 						<Label htmlFor="email" className="">
-		// 							Email Id
-		// 						</Label>
-		// 						<Input
-		// 							id="email"
-		// 							className="col-span-3"
-		// 							required
-		// 							onChange={(e) => setEmail(e.target.value)}
-		// 						/>
-		// 					</div> */}
-		// 					<div className="grid grid-cols-4 items-center gap-4">
-		// 						<Label htmlFor="Address" className="">
-		// 							Address
-		// 						</Label>
-		// 						<Input
-		// 							id="Address"
-		// 							className="col-span-3"
-		// 							required
-		// 							onChange={(e) => setAddress(e.target.value)}
-		// 						/>
-		// 					</div>
-		// 					<div className="flex  items-center gap-4 ">
-		// 						<Label htmlFor="problem" className="w-28">
-		// 							Your problem
-		// 						</Label>
-		// 						<Textarea
-		// 							placeholder="Type your message here."
-		// 							id="problem"
-		// 							className="col-span-3"
-		// 							required
-		// 							onChange={(e) => setProblem(e.target.value)}
-		// 						/>
-		// 					</div>
-		// 				</div>
-		// 				<DialogFooter>
-		// 					<DialogClose asChild>
-		// 						<Button type="submit" onClick={handleClick}>
-		// 							Send
-		// 						</Button>
-		// 					</DialogClose>
-		// 				</DialogFooter>
-		// 			</DialogContent>
-		// 		</Dialog>
+		// 			</DialogClose>
+		// 		</DialogFooter>
+		// 	</DialogContent>
+		// </Dialog>
 		// 	</div>
 		// </nav>
 	);
