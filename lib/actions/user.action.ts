@@ -19,7 +19,7 @@ export async function getAllUser() {
 interface CreateUserParams {
 	name: string;
 	number: string;
-	email: string;
+	// email: string;
 	Address: string;
 	Description: string;
 }

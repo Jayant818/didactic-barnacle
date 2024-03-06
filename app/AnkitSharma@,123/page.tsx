@@ -17,7 +17,7 @@ const ContactCard = ({ contact }: { contact: ContactType }) => {
 		<div className="bg-gray-900 text-white rounded-lg p-4 mb-4 w-[80%] ">
 			<h2 className="text-xl md:text-2xl font-bold">{contact.name}</h2>
 			<p className="text-base md:text-lg">Number: {contact.number}</p>
-			<p className="text-base md:text-lg">Email: {contact.email}</p>
+			{/* <p className="text-base md:text-lg">Email: {contact.email}</p> */}
 			<p className="text-base md:text-lg">Address: {contact.Address}</p>
 			<p className="text-base md:text-lg w-[80%]">
 				Description: {contact.Description}

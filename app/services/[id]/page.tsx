@@ -11,7 +11,7 @@ const NewService = (params: any) => {
 	console.log(data[0]);
 
 	return (
-		<div className=" flex flex-col gap-6 my-10">
+		<div className=" flex flex-col gap-6 py-10 md:py-20">
 			<h2 className="text-2xl font-semibold w-full text-center">
 				{data[0].name}
 			</h2>
@@ -76,24 +76,11 @@ const NewService = (params: any) => {
 			)}
 			<div className="p-10 md:p-20  ">
 				<h3 className="text-xl md:text-2xl  font-bold">Terms & Conditions</h3>
-				<p className="mt-5 text-base md:text-lg text-justify">
-					Welcome to UrbanDoor. These terms and conditions outline the rules and
-					regulations for the use of UrbanDoor&apos;s services. By accessing
-					this website, we assume you accept these terms and conditions. Do not
-					continue to use UrbanDoor if you do not agree with all of the terms
-					and conditions stated on this page. UrbanDoor connects you with
-					skilled professionals for all your home needs. From fixing leaks to
-					cleaning, we have got you covered. This service is provided by
-					UrbanDoor on an `&apos;as is`&apos; basis. We make no representations
-					or warranties of any kind, express or implied, about the operation of
-					this service or the information, content, materials or products
-					included on this website. By using our services, you hereby consent to
-					our terms and conditions and agree to its terms. These terms and
-					conditions will be governed by and interpreted in accordance with the
-					laws of the state of Haryana, and you submit to the non-exclusive
-					jurisdiction of the state and federal courts located in Haryana for
-					the resolution of any disputes.
-				</p>
+				<ul className="mt-5 text-base md:text-lg text-justify">
+					{data[0].conditions.map((item, ind) => {
+						return <li key={ind}>{item}</li>;
+					})}
+				</ul>
 			</div>
 		</div>
 	);

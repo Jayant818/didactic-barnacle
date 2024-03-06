@@ -1,9 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
+// next.config.js
 const imageConfig = {
 	images: {
-		domains: ["images.unsplash.com"],
+		domains: ["images.unsplash.com", "www.ifbappliances.com"],
 	},
 };
 

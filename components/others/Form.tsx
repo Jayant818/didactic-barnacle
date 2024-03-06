@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import emailjs from "@emailjs/browser";
+import { useRouter } from "next/navigation";
+import { createUser } from "@/lib/actions/user.action";
 
 const formSchema = z.object({
 	name: z.string().min(2, {
@@ -23,9 +25,6 @@ const formSchema = z.object({
 	}),
 	number: z.string().min(10, {
 		message: "Number must be at least 10 characters.",
-	}),
-	emailId: z.string().email({
-		message: "Invalid email.",
 	}),
 	address: z.string().min(10, {
 		message: "Address must be at least 10 characters.",
@@ -35,55 +34,42 @@ const formSchema = z.object({
 	}),
 });
 
-// Initializing emailjs
-emailjs.init({
-	publicKey: process.env.EMAILJS_API_KEY,
-});
-
 const ContactForm = () => {
+	const router = useRouter();
 	// 1. Define your form.
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
 			name: "",
 			number: "",
-			emailId: "",
 			address: "",
 			message: "",
 		},
 	});
 
 	// 2. Define a submit handler.
-	function onSubmit(values: z.infer<typeof formSchema>) {
+	async function onSubmit(values: z.infer<typeof formSchema>) {
 		// Do something with the form values.
 		// ✅ This will be type-safe and validated.
 		const templateParams = {
 			name: values.name,
 			number: values.number,
-			email: values.emailId,
 			Address: values.address,
 			Description: values.message,
 		};
 
-		emailjs
-			.send("service_cv4dpt9", "template_mbsm63b", templateParams, {
-				publicKey: "Bnfzfpmsj0UTGmJ-8",
-			})
-			.then(
-				(response) => {
-					console.log("SUCCESS!", response.status, response.text);
-				},
-				(err) => {
-					console.log("FAILED...", err);
-				}
-			);
-		console.log(values);
+		try {
+			await createUser(templateParams);
+
+			router.push("/");
+		} catch (error) {}
 	}
+
 	return (
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className="space-y-2  mx-auto bg-[#1c2432] p-4 rounded-lg shadow-lg w-[50%]"
+				className="space-y-2  mx-auto bg-[#1c2432] p-4 rounded-lg shadow-lg w-[50%] w-full"
 			>
 				<FormField
 					control={form.control}
@@ -122,7 +108,7 @@ const ContactForm = () => {
 						</FormItem>
 					)}
 				/>
-				<FormField
+				{/* <FormField
 					control={form.control}
 					name="emailId"
 					render={({ field }) => (
@@ -140,7 +126,7 @@ const ContactForm = () => {
 							<FormMessage />
 						</FormItem>
 					)}
-				/>
+				/> */}
 				<FormField
 					control={form.control}
 					name="address"

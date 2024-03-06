@@ -24,7 +24,7 @@ const Carousal = () => {
 						<div className="p-1">
 							<Card>
 								<CardContent className="flex aspect-square items-center justify-center p-6">
-									<Image width={900} height={700} alt="urbanDoor" src={src} />
+									<Image width={900} height={700} alt="Urban Door" src={src} />
 								</CardContent>
 							</Card>
 						</div>
