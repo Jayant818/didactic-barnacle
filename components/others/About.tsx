@@ -4,10 +4,7 @@ import React from "react";
 const About = () => {
 	return (
 		<div className="text-white py-10 md:py-20">
-			{/* <h1 className="text-2xl md:text-4xl pl-10 md:pl-28 mb-6 md:mb-10">
-        About Us
-    </h1> */}
-			<div className="py-10 md:pt-20 ">
+			<div className=" pt-4 ">
 				<h3 className="font-extrabold text-2xl md:text-2xl text-[#ff7000] uppercase text-center mb-6 md:mb-10">
 					WHo are we
 				</h3>

@@ -79,7 +79,7 @@ function Footer() {
 					<div className="flex flex-col gap-4 mt-6">
 						{/* ac ref water deep fr */}
 						{[
-							"Address:- Tc-610, Capital",
+							"Address:- TC-610, Capital",
 							"HighStreet, Phoal Bagh",
 							"Chowk, Bhiwadi(Raj) 3010A.",
 							"Phone - 9116671966",

@@ -15,7 +15,7 @@ const Services = () => {
 		<div className="py-20  text-[rgb(255,255,255)]">
 			<div>
 				<h2 className="text-left font-semibold text-2xl md:text-3xl pl-10 md:pl-20 ">
-					Application Repair and Services
+					Appliances Repair and Services
 				</h2>
 
 				<div className="grid grid-cols-1 gap-10 px-10  md:px-20 mt-10 md:grid-cols-3">

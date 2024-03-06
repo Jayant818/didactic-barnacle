@@ -116,7 +116,7 @@ const Navbar = () => {
 				</ul>
 				<Button
 					variant="outline"
-					className="px-1   md:px-4 text-[0.7rem] md:text-base "
+					className="px-2 md:px-4 text-sm md:text-base "
 				>
 					<a href="tel:9116671966" className="flex flex-wrap">
 						Contact
@@ -137,7 +137,7 @@ const Navbar = () => {
 					<DialogTrigger asChild>
 						<Button
 							variant="outline"
-							className="px-1  md:px-4 text-[0.7rem] md:text-base"
+							className="px-2  md:px-4 text-sm md:text-base"
 						>
 							Book Now
 						</Button>
