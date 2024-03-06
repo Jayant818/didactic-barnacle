@@ -13,7 +13,7 @@ export async function connectToDB() {
 
 	try {
 		await mongoose.connect(process.env.MONGODB_URL, {
-			dbName: "Urban Door",
+			dbName: "urbanDoor",
 		});
 		isConnected = true;
 
