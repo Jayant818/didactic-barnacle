@@ -200,7 +200,7 @@ const Navbar = () => {
 			<div
 				className={`${
 					isOpen ? "block" : "hidden"
-				} w-full md:hidden md:w-auto order-3 md:order-1`}
+				} w-full md:hidden md:w-auto order-3 md:order-1 mb-10`}
 			>
 				<ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
 					<li>

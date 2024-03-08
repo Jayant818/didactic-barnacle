@@ -11,7 +11,7 @@ const NewService = (params: any) => {
 	console.log(data[0]);
 
 	return (
-		<div className=" flex flex-col gap-6 py-10 md:py-20">
+		<div className=" flex flex-col gap-6 py-20 md:py-20">
 			<h2 className="text-2xl font-semibold w-full text-center">
 				{data[0].name}
 			</h2>

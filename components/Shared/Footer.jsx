@@ -6,9 +6,12 @@ function Footer() {
 		<footer className="w-full py-10  bg-[#0f1117]">
 			<div className="w-full flex flex-col md:flex-row justify-between px-20 gap-10">
 				<div className="">
-					<h3 className="text-xl leading-none font-bold  pb-10 text-white underline">
-						Useful Links
-					</h3>
+					<div className="pb-10">
+						<h3 className="text-xl leading-none font-bold  pb-10 text-white underline">
+							Useful Links
+						</h3>
+					</div>
+
 					<div className="flex flex-col gap-4 mt-6">
 						{[
 							{
@@ -39,9 +42,11 @@ function Footer() {
 					</div>
 				</div>
 				<div className="">
-					<h3 className="text-xl leading-none font-bold  pb-10   text-white border-b-2 border-white">
-						Top Services
-					</h3>
+					<div className="pb-10">
+						<h3 className="text-xl leading-none font-bold  pb-10   text-white border-b-2 border-white">
+							Top Services
+						</h3>
+					</div>
 					<div className="flex flex-col gap-4 mt-6">
 						{/* ac ref water deep fr */}
 						{[
@@ -73,9 +78,11 @@ function Footer() {
 					</div>
 				</div>
 				<div className="">
-					<h3 className="text-xl font-bold leading-none  pb-10  text-white border-b-2 border-white">
-						Contact Details
-					</h3>
+					<div className="pb-10">
+						<h3 className="text-xl font-bold leading-none  pb-10  text-white border-b-2 border-white">
+							Contact Details
+						</h3>
+					</div>
 					<div className="flex flex-col gap-4 mt-6">
 						{[
 							"Address:- TC-610, Capital",
@@ -91,9 +98,11 @@ function Footer() {
 					</div>
 				</div>
 				<div>
-					<h3 className="text-xl font-bold leading-none  pb-10  text-white border-b-2 border-white">
-						Join us at
-					</h3>
+					<div className="pb-10">
+						<h3 className="text-xl font-bold leading-none  pb-10  text-white border-b-2 border-white">
+							Join us at
+						</h3>
+					</div>
 					<div className="flex   gap-6 mt-6">
 						<Link href="https://www.instagram.com/urbandoorservices?igsh=MzRlODBiNWFlZA==">
 							<div className="flex gap-2 ">
