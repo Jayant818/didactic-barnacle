@@ -5,12 +5,10 @@ function Footer() {
 	return (
 		<footer className="w-full py-10  bg-[#0f1117]">
 			<div className="w-full flex flex-col md:flex-row justify-between px-20 gap-10">
-				<div className="">
-					<div className="pb-10">
-						<h3 className="text-xl leading-none font-bold  pb-10 text-white underline">
-							Useful Links
-						</h3>
-					</div>
+				<div className=" flex gap-3 flex-col">
+					<h3 className="text-xl leading-none font-bold  pb-10 text-white underline">
+						Useful Links
+					</h3>
 
 					<div className="flex flex-col gap-4 mt-6">
 						{[
@@ -41,12 +39,10 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div className="">
-					<div className="pb-10">
-						<h3 className="text-xl leading-none font-bold  pb-10   text-white border-b-2 border-white">
-							Top Services
-						</h3>
-					</div>
+				<div className=" flex gap-3 flex-col">
+					<h3 className="text-xl leading-none font-bold  pb-10   text-white ">
+						Top Services
+					</h3>
 					<div className="flex flex-col gap-4 mt-6">
 						{/* ac ref water deep fr */}
 						{[
@@ -77,12 +73,10 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div className="">
-					<div className="pb-10">
-						<h3 className="text-xl font-bold leading-none  pb-10  text-white border-b-2 border-white">
-							Contact Details
-						</h3>
-					</div>
+				<div className=" flex gap-3 flex-col">
+					<h3 className="text-xl font-bold leading-none  pb-10  text-white ">
+						Contact Details
+					</h3>
 					<div className="flex flex-col gap-4 mt-6">
 						{[
 							"Address:- TC-610, Capital",
@@ -97,14 +91,16 @@ function Footer() {
 						))}
 					</div>
 				</div>
-				<div>
-					<div className="pb-10">
-						<h3 className="text-xl font-bold leading-none  pb-10  text-white border-b-2 border-white">
-							Join us at
-						</h3>
-					</div>
+				<div className=" flex gap-3 flex-col">
+					<h3 className="text-xl font-bold leading-none pb-10 text-white">
+						Join us at
+					</h3>
 					<div className="flex gap-6 mt-6">
-						<Link href="https://www.instagram.com/urbandoorservices?igsh=MzRlODBiNWFlZA==">
+						<Link
+							href="https://www.instagram.com/urbandoorservices?igsh=MzRlODBiNWFlZA=="
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<div className="flex gap-2">
 								<Image
 									src="/images/instagram.svg"
@@ -117,7 +113,11 @@ function Footer() {
 							</div>
 						</Link>
 
-						<Link href="https://www.facebook.com/urbandoorservices?mibextid=LQQJ4d">
+						<Link
+							href="https://www.facebook.com/urbandoorservices?mibextid=LQQJ4d"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<div className="flex gap-2">
 								<Image
 									src="/images/facebook.svg"
@@ -129,7 +129,11 @@ function Footer() {
 							</div>
 						</Link>
 
-						<Link href="https://wa.me/9116671966">
+						<Link
+							href="https://wa.me/9116671966"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<div className="flex gap-2">
 								<Image
 									src="/images/whatsapp.svg"
