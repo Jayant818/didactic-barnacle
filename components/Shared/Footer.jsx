@@ -55,7 +55,7 @@ function Footer() {
 								link: "/services/1",
 							},
 							{
-								name: "Refergretor Service",
+								name: "Refrigerator Service",
 								link: "/services/5",
 							},
 							{
@@ -86,8 +86,8 @@ function Footer() {
 					<div className="flex flex-col gap-4 mt-6">
 						{[
 							"Address:- TC-610, Capital",
-							"HighStreet, Phoal Bagh",
-							"Chowk, Bhiwadi(Raj) 3010A.",
+							"HighStreet, Phool Bagh",
+							"Chowk, Bhiwadi(Raj) 301019.",
 							"Phone - 9116671966",
 							"Email - info.urbandoor@gmail.com",
 						].map((service, index) => (
@@ -103,9 +103,9 @@ function Footer() {
 							Join us at
 						</h3>
 					</div>
-					<div className="flex   gap-6 mt-6">
+					<div className="flex gap-6 mt-6">
 						<Link href="https://www.instagram.com/urbandoorservices?igsh=MzRlODBiNWFlZA==">
-							<div className="flex gap-2 ">
+							<div className="flex gap-2">
 								<Image
 									src="/images/instagram.svg"
 									alt="Instagram Logo"
@@ -122,6 +122,18 @@ function Footer() {
 								<Image
 									src="/images/facebook.svg"
 									alt="Facebook Logo"
+									width={23}
+									height={23}
+									className="object-contain filter brightness-0"
+								/>
+							</div>
+						</Link>
+
+						<Link href="https://wa.me/9116671966">
+							<div className="flex gap-2">
+								<Image
+									src="/images/whatsapp.svg"
+									alt="WhatsApp Logo"
 									width={23}
 									height={23}
 									className="object-contain filter brightness-0"
